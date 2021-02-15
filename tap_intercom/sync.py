@@ -166,7 +166,7 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
     page = 1
     offset = 0
     # Default per_page limit is 50, max is 60
-    limit = endpoint_config.get('batch_size', 60)
+    limit = endpoint_config.get('batch_size', 150)
     total_records = 0
 
     # Check scroll_type to determine if to use Scroll API
